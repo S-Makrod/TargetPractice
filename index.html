@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="scripts.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Nick Cage Target Practice</title>
-</head>
-<body>
-    <main>
-        <button onclick="startGame" class="start-button">
-            Start
-        </button>
+  </head>
+  <body>
+    <main id="game-area">
+      <div id="score-board">
+        <span><label>Score:</label><input disabled type="text" id="score-input" value="0" /></span
+        ><span><label>Avg Reaction:</label><input disabled type="text" id="avg-reaction" value="0" /></span
+        ><span
+          ><label>Fastest Reaction:</label><input disabled type="text" id="best-reaction" value="0"
+        /></span>
+      </div>
+      <p id="target" class="hide">target</p>
+      <button onclick="startGame()" id="start-button">Start</button>
     </main>
-</body>
+  </body>
 </html>
