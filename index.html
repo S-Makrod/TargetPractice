@@ -16,13 +16,21 @@
   <body>
     <main id="game-area">
       <div id="score-board">
-        <span><label>Score:</label><input disabled type="text" id="score-input" value="0" /></span
-        ><span><label>Avg Reaction:</label><input disabled type="text" id="avg-reaction" value="0" /></span
+        <span
+          ><label>Score:</label
+          ><input disabled type="text" id="score-input" value="0" /></span
         ><span
-          ><label>Fastest Reaction:</label><input disabled type="text" id="best-reaction" value="0"
-        /></span>
+          ><label>Avg Reaction:</label
+          ><input disabled type="text" id="avg-reaction" value="0" /></span
+        ><span
+          ><label>Fastest Reaction:</label
+          ><input disabled type="text" id="best-reaction" value="0"
+        /></span><span
+        ><label>Current Reaction:</label
+        ><input disabled type="text" id="current-reaction" value="0"
+      /></span>
       </div>
-      <p id="target" class="hide">target</p>
+      <img id="target" class="hide" src="assets/pictures/NCMeme1.png"/>
       <button onclick="startGame()" id="start-button">Start</button>
     </main>
   </body>

@@ -5,6 +5,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+
+  cursor: crosshair;
 }
 
 main {
@@ -15,26 +17,26 @@ main {
   align-items: center;
   justify-content: center;
 
-  background: rgb(203, 93, 110);
+  background: rgb(115, 110, 111);
   background: -moz-linear-gradient(
     315deg,
-    rgba(203, 93, 110, 1) 0%,
-    rgba(203, 93, 110, 1) 14%,
-    rgba(165, 83, 181, 1) 82%
+    rgba(115, 110, 111, 1) 0%,
+    rgba(134, 134, 134, 1) 14%,
+    rgba(83, 144, 181, 1) 82%
   );
   background: -webkit-linear-gradient(
     315deg,
-    rgba(203, 93, 110, 1) 0%,
-    rgba(203, 93, 110, 1) 14%,
-    rgba(165, 83, 181, 1) 82%
+    rgba(115, 110, 111, 1) 0%,
+    rgba(134, 134, 134, 1) 14%,
+    rgba(83, 144, 181, 1) 82%
   );
   background: linear-gradient(
     315deg,
-    rgba(203, 93, 110, 1) 0%,
-    rgba(203, 93, 110, 1) 14%,
-    rgba(165, 83, 181, 1) 82%
+    rgba(115, 110, 111, 1) 0%,
+    rgba(134, 134, 134, 1) 14%,
+    rgba(83, 144, 181, 1) 82%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cb5d6e",endColorstr="#a553b5",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#736e6f",endColorstr="#5390b5",GradientType=1);
 }
 
 #start-button {
@@ -49,6 +51,23 @@ main {
   font-style: normal;
 
   cursor: pointer;
+  color: white;
+
+  background: none;
+  background-image: url("assets/pictures/NCMeme3.png");
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* do not repeat the image */
+  background-size: cover;
+  border: none;
+
+  transition: 1s width, 1s height, 1s font-size;
+}
+
+#start-button:hover {
+  width: 350px;
+  height: 350px;
+  
+  font-size: 2.5em;
 }
 
 #game-area {
@@ -57,10 +76,11 @@ main {
 
 #target {
   position: absolute;
-  cursor: pointer;
 
-  width: 50px;
-  height: 50px;
+  object-fit: contain;
+
+  width: 150px;
+  height: 150px;
 }
 
 #score-board {
